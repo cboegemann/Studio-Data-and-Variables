@@ -56,7 +56,12 @@ console.log();
 console.log(dashes);
 console.log("> OVERALL STATUS");
 console.log(dashes);
-console.log("* Clear for takeoff: YES")
+if(astronautCount > 5 == true && astronautStatus == "ready" == true && totalMassKg < 1000000 == true && fuelTempCelsius == -225 == true && fuelLevel == "100%" == true && weatherStatus == "clear" == true){
+  console.log("* Clear for takeoff: YES");
+}
+else{
+  console.log("* Clear for takeoff: NO");
+}
 
 // When done, have your TA check your code.
 
@@ -67,66 +72,8 @@ const input = require('readline-sync');
 let astronautCount = input.question("Enter the number of astronauts going on the mission: ");
 console.log(astronautCount)
 
-~*~ Note: I was trying to make a way to make some sort of if/else thing set up so that if various conditions were true, the program would print "* Clear for takeoff: YES" and if any of them were false, it would instead print "* Clear for takeoff: NO" but I don't know enough to sort of work through how I am supposed to write these statements so that it will in fact write "* Clear for takeoff: YES" instead of the else statement. Just wanted to share that I was having fun goofing around with this attempt.  
-
-if((astronautCount > 5 !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if(astronautStatus == "ready" !== true){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if((totalMassKg < 1000000 !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if((fuelTempCelsius == -225 !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if((fuelLevel == "100%" !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if((fuelTempCelsius == -225 !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
-
-if((weatherStatus == "clear" !== true)){
-  console.log("* Clear for takeoff: YES");
-}
-else{
-  console.log("* Clear for takeoff: NO");
-}
-
 */
 
 // BONUS: Use readline-sync to prompt the user to enter the number of astronauts going on the mission.
 
-//&&  &&  &&  &&  &&  && (weatherStatus == "clear" != true))
 
